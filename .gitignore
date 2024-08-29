@@ -1,0 +1,76 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]eleases/
+[Rr]eleasesPublic/
+x64/
+x86/
+[Aa]rtefacts/
+[Ll]ogs/
+*.log
+*.dmp
+*.pdb
+*.obj
+*.exe
+*.dll
+*.cache
+*.nupkg
+*.swp
+*.suo
+*.user
+*.userosscache
+*.suo
+*.csproj.user
+*.csproj.autosave
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuget/
+nuget.config
+nuget.exe
+packages/
+*.nupkg
+*.snupkg
+
+# VS Code
+.vscode/
+.history/
+
+# Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Dotnet build output
+*.dotnet/
+
+# Azure Pipelines
+azure-pipelines.yml
+
+# Tye
+.tye/
+
+# Miscellaneous
+*.log
+*.tmp
+*.bak
+*.swp
+*.suo
+*.user
+*.userosscache
+*.suo
+*.csproj.user
+*.csproj.autosave
+*.dbmdl
+*.dbproj
+*.dbschema
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+
+.env
+.env.*
