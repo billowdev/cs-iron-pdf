@@ -1,0 +1,23 @@
+{
+    "htmlTemplate": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<title>Health Certificate</title>\n\t<style>\n\t\tbody {\n\t\t\tfont-family: Arial, sans-serif;\n\t\t\tbackground-color: #FFF;\n\t\t}\n\t\t.grid {\n\t\t\tdisplay: flex;\n\t\t\talign-items: center; /* Align items vertically center */\n\t\t}\n\t\t.logo {\n\t\t\twidth: 60px;\n\t\t\tmargin-right: 10px; /* Space between image and heading */\n\t\t}\n\n\t\t.key_field {\n\t\t\tmargin: 0; width: 200px;\n\t\t}\n\t\t.colon {\n\t\t\tmargin-right: 10px;\n\t\t}\n\t\t.value_field {\n\t\t\tmargin: 0;\n\t\t}\n\t\t.key_value {\n\t\t\tdisplay: flex;\n\t\t}\n\t\t.under-license {\n\t\t\twidth: 200px;\n\t\t\tmargin-right: 80px;\n\t\t\tmargin-left: auto;\n\t\t\tborder: 0.5px solid #000; opacity: 0.5;\n\t\t}\n\t\t.signer {\n\t\t\tmargin-top: 10px;\n\t\t\tmargin-right: 100px;\n\t\t}\n\t\t.seperator-line {\n\t\t\tborder: 0.5px solid #000; opacity: 0.5; margin: 20px 0;\n\t\t}\n\t</style>\n</head>\n\n<body>\n\t<div class=\"grid\">\n\t\t<!-- <img class=\"logo\" src=\"https://logowik.com/content/uploads/images/panda3013.logowik.com.webp\"></img> -->\n\t\t<img class=\"logo\" src=\"https://logowik.com/content/uploads/images/panda3013.logowik.com.webp\"></img>\n\t\t<h2>{{DOCUMENT_NAME}}</h2>\n\t\t<h5 style=\"position: absolute; top: 0; right: 0; margin: 10px;\">{{DOCUMENT_VERSION_TYPE}}</h5>\n\t</div>\n\t<div class=\"date\">\n\t\t<h6>{{DOCUMENT_DATE}}</h6>\n\t</div>\n\n\t<div>\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">CARRIER NAME</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{CARRIER_NAME}}</small>\n\t\t</div>\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">PORT OF LOADING</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{PORT_OF_LOADING}}</small>\n\t\t</div>\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">PORT OF DISCHARGE</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{PORT_OF_DISCHARGE}}</small>\n\t\t</div>\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">DESTINATION</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{PORT_OF_DESTINATION}}</small>\n\t\t</div>\n\t</div>\n\t<hr class=\"seperator-line\">\n\t<div>\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">DESCRIPTION OF GOODS #1</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{DESCRIPTION_OF_GOODS}}</small>\n\t\t</div>\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">PACKING</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{PACKING}}</small>\n\t\t</div>\n\t</div>\n\t\n\t<div style=\"margin-top: 40px;\">\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">TOTAL GROSS WEIGHT</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{TOTAL_GROSS_WEIGHT}}</small>\n\t\t</div>\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">TOTAL NET WEIGHT</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{TOTAL_NET_WEIGHT}}</small>\n\t\t</div>\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">TOTAL NUMBER OF BAG</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{TOTAL_NUMBER_OF_BAG}}</small>\n\t\t</div>\n\t\t<br />\n\t\t<div class=\"key_value\">\n\t\t\t<h5 class=\"key_field\">SHIPPING MARK</h5>\n\t\t\t<span class=\"colon\">:</span>\n\t\t\t<small class=\"value_field\">{{SHIPPING_MARK}}</small>\n\t\t</div>\n\t</div>\n\t<br />\n\t<small>{{REMARK}} | {{REMARK3}}</small>\n\n\t<br />\n<br />\n<br />\n<div style=\"text-align: {{signature_style}};\">\n    <!-- <p style=\"margin-bottom: 50px;\">Signature</p> -->\n    <hr class=\"under-license\">\n    <small class=\"signer\">BY MANUFACTURER</small>\n</div>\n</body>\n</html>",
+    "content": {
+        "signature_style": "center",
+        "DOCUMENT_NAME": "BILL OF LADING",
+        "DOCUMENT_VERSION_TYPE": "ORIGINAL",
+        "DOCUMENT_DATE": "2024-08-29",
+        "CARRIER_NAME": "Global Shipping Ltd.",
+        "PORT_OF_LOADING": "Port of Shanghai",
+        "PORT_OF_DISCHARGE": "Port of Los Angeles",
+        "PORT_OF_DESTINATION": "Los Angeles, USA",
+        "DESCRIPTION_OF_GOODS": "Electronics",
+        "PACKING": "Boxes",
+        "TOTAL_GROSS_WEIGHT": "1000 kg",
+        "TOTAL_NET_WEIGHT": "950 kg",
+        "TOTAL_NUMBER_OF_BAG": "50 bags",
+        "SHIPPING_MARK": "GSL12345",
+        "REMARK": "Handle with care",
+        "REMARK2": "Handle with remark 2",
+        "REMARK3": "___________________",
+        "REMARK4" : "Hellow World"
+    }
+}

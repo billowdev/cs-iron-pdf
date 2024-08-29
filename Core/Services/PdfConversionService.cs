@@ -39,6 +39,16 @@ namespace CommonPDFServices.Core.Services
             {
                 var renderer = new HtmlToPdf();
                 var pdfDocument = renderer.RenderHtmlAsPdf(htmlContent);
+
+
+string watermarkHtml = @"
+<img src='https://ironsoftware.com/img/products/ironpdf-logo-text-dotnet.svg'>
+<h1>Iron Software</h1>";
+
+                // pdfDocument.ApplyWatermark(watermarkHtml, rotation: 45, opacity: 20);
+                pdfDocument.ApplyWatermark(watermarkHtml, opacity: 20);
+
+
                var filePath = Path.Combine(Path.GetTempPath(), "health_certificates.pdf");
                 pdfDocument.SaveAs(filePath);
 
